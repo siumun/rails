@@ -1,2 +1,32 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+
+.pagy.series-nav {
+    @apply isolate inline-flex -space-x-px rounded-md shadow-sm;
+}
+
+.pagy.series-nav a,
+.pagy.series-nav a[aria-disabled="true"] {
+    @apply relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500;
+}
+
+.pagy.series-nav a:first-child {
+    @apply rounded-l-md;
+}
+
+.pagy.series-nav a:last-child {
+    @apply rounded-r-md;
+}
+
+.pagy.series-nav a[aria-current="page"] {
+    @apply z-10 border-indigo-500 bg-indigo-50 text-indigo-600;
+}
+
+.pagy.series-nav a[aria-disabled="true"] {
+    @apply bg-slate-100;
+}
+
+.pagy.series-nav a[href]:hover {
+    @apply bg-gray-50;
+}
