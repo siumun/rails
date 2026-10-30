@@ -59,6 +59,6 @@ group :test do
 end
 
 gem "devise"
-gem "tailwindcss-rails", "~> 4.6"
+gem "tailwindcss-rails", "~> 4.7"
 gem "aws-sdk-s3", require: false
 gem "pagy", "~> 43.4"
